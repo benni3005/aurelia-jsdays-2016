@@ -1,0 +1,11 @@
+<template>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li repeat.for="row of router.navigation"><a href.bind="row.href">${row.title}</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <router-view></router-view>
+</template>

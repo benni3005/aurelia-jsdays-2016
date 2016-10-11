@@ -1,0 +1,24 @@
+<template>
+    <require from="resources/attributes/draggable"></require>
+    <require from="resources/elements/list-card.html"></require>
+    <require from="./list-container.css"></require>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4>${title}</h4>
+        </div>
+        <div class="panel-body">
+            <ul class="list-unstyled">
+                <li repeat.for="card of cards">
+                    <list-card card.bind="card" draggable.bind="card"></list-card>
+                </li>
+            </ul>
+        </div>
+        <div class="panel-footer">
+            <div class="well well-sm">
+                <textarea value.bind="draftCard" class="form-control"></textarea>
+                <button click.delegate="addCard()" class="btn btn-primary btn-block">Add card</button>
+            </div>
+        </div>
+    </div>
+</template>

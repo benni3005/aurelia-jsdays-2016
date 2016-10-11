@@ -1,0 +1,21 @@
+<template>
+    <require from="resources/elements/list-container"></require>
+    <require from="./app.css"></require>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <section class="au-animate">
+                <div class="container-fluid main-container">
+                    <list-container repeat.for="list of lists" id.bind="list.id" title.bind="list.title" cards.bind="list.cards"></list-container>
+
+                    <div class="new-list panel panel-primary">
+                        <div class="panel-heading">
+                            <input value.bind="newList" type="text" class="form-control" />
+                            <button click.delegate="addList()" class="btn btn-primary btn-block">Add a list...</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</template>

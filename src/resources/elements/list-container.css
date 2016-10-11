@@ -1,0 +1,43 @@
+list-container {
+	display: inline-block;
+	margin: 1em;
+	vertical-align: top;
+	white-space: normal;
+}
+
+list-container ul {
+	min-height: 30px;
+}
+
+li.gu-mirror {
+	transform: rotate(5deg);
+	list-style: none;
+}
+
+list-container .panel {
+	border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+	width: 300px;
+}
+
+list-container .panel-default .panel-heading {
+	background: #e0e0e0;
+	border-bottom: 0;
+	font-weight: bold;
+}
+
+list-container .panel-default .panel-body {
+	background: #e0e0e0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+list-container .panel-default .panel-footer {
+	background: #e0e0e0;
+	border-top: 0;
+}
+
+list-container textarea.form-control {
+	resize: none;
+	border: 0;
+	padding: 0;
+}

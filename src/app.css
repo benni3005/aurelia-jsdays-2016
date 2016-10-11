@@ -1,0 +1,30 @@
+body {
+    background: #0079a1;
+}
+
+.main-container {
+    white-space: nowrap;
+}
+
+.new-list {
+    display: inline-block;
+    margin: 1em;
+	vertical-align: top;
+	white-space: normal;
+    width: 300px;
+}
+
+.new-list.panel {
+    border-bottom: 0;
+}
+
+.new-list input {
+    color: white;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 19px;
+    border: 0;
+}
+
+.new-list .btn {
+    border: 0;
+}

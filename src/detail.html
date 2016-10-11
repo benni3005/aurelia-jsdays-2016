@@ -1,3 +1,25 @@
 <template>
-  <h1>Detail</h1>
+  <div class="container-fluid">
+    <h1>Detail: ${title}</h1>
+
+    <div>
+      <label>Description</label>
+      <textarea value.bind="description" class="form-control"></textarea>
+    </div>
+
+    <div>
+      <label>Priority</label>
+      <input type="number" value.bind="priority" class="form-control">
+    </div>
+
+    <div>
+      <label>Created date</label>
+      <input type="date" value.bind="createdDate" class="form-control">
+    </div>
+
+    <div>
+      <label>Updated date</label>
+      <input type="date" value.bind="updatedDate" class="form-control">
+    </div>
+  </div>
 </template>

@@ -10,7 +10,9 @@
         <div class="panel-body">
             <ul class="list-unstyled">
                 <li repeat.for="card of cards">
+                  <a route-href="route: detail; params.bind: { id: card.id }">
                     <list-card card.bind="card" draggable.bind="card"></list-card>
+                  </a>
                 </li>
             </ul>
         </div>
